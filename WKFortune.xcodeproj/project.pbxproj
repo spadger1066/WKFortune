@@ -13,6 +13,14 @@
 		DCAD6B381BD56EB100D5A7FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCAD6B371BD56EB100D5A7FB /* Assets.xcassets */; };
 		DCAD6B3B1BD56EB100D5A7FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAD6B391BD56EB100D5A7FB /* LaunchScreen.storyboard */; };
 		DCAD6B461BD56EB100D5A7FB /* WKFortuneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD6B451BD56EB100D5A7FB /* WKFortuneTests.swift */; };
+		DCAD6B561BD56ECC00D5A7FB /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAD6B541BD56ECC00D5A7FB /* Interface.storyboard */; };
+		DCAD6B581BD56ECC00D5A7FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCAD6B571BD56ECC00D5A7FB /* Assets.xcassets */; };
+		DCAD6B5F1BD56ECC00D5A7FB /* WKFortuneWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DCAD6B5E1BD56ECC00D5A7FB /* WKFortuneWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DCAD6B661BD56ECC00D5A7FB /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD6B651BD56ECC00D5A7FB /* InterfaceController.swift */; };
+		DCAD6B681BD56ECC00D5A7FB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD6B671BD56ECC00D5A7FB /* ExtensionDelegate.swift */; };
+		DCAD6B6A1BD56ECC00D5A7FB /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD6B691BD56ECC00D5A7FB /* NotificationController.swift */; };
+		DCAD6B6C1BD56ECC00D5A7FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCAD6B6B1BD56ECC00D5A7FB /* Assets.xcassets */; };
+		DCAD6B701BD56ECC00D5A7FB /* WKFortuneWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DCAD6B521BD56ECC00D5A7FB /* WKFortuneWatch.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +31,46 @@
 			remoteGlobalIDString = DCAD6B2C1BD56EB100D5A7FB;
 			remoteInfo = WKFortune;
 		};
+		DCAD6B601BD56ECC00D5A7FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCAD6B251BD56EB000D5A7FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCAD6B5D1BD56ECC00D5A7FB;
+			remoteInfo = "WKFortuneWatch Extension";
+		};
+		DCAD6B6E1BD56ECC00D5A7FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCAD6B251BD56EB000D5A7FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCAD6B511BD56ECC00D5A7FB;
+			remoteInfo = WKFortuneWatch;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DCAD6B741BD56ECC00D5A7FB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DCAD6B5F1BD56ECC00D5A7FB /* WKFortuneWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCAD6B781BD56ECC00D5A7FB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				DCAD6B701BD56ECC00D5A7FB /* WKFortuneWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DCAD6B2D1BD56EB100D5A7FB /* WKFortune.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKFortune.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +83,17 @@
 		DCAD6B411BD56EB100D5A7FB /* WKFortuneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKFortuneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCAD6B451BD56EB100D5A7FB /* WKFortuneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKFortuneTests.swift; sourceTree = "<group>"; };
 		DCAD6B471BD56EB100D5A7FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCAD6B521BD56ECC00D5A7FB /* WKFortuneWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKFortuneWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCAD6B551BD56ECC00D5A7FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		DCAD6B571BD56ECC00D5A7FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCAD6B591BD56ECC00D5A7FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCAD6B5E1BD56ECC00D5A7FB /* WKFortuneWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WKFortuneWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCAD6B641BD56ECC00D5A7FB /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		DCAD6B651BD56ECC00D5A7FB /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		DCAD6B671BD56ECC00D5A7FB /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		DCAD6B691BD56ECC00D5A7FB /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		DCAD6B6B1BD56ECC00D5A7FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCAD6B6D1BD56ECC00D5A7FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +111,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DCAD6B5B1BD56ECC00D5A7FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +126,8 @@
 			children = (
 				DCAD6B2F1BD56EB100D5A7FB /* WKFortune */,
 				DCAD6B441BD56EB100D5A7FB /* WKFortuneTests */,
+				DCAD6B531BD56ECC00D5A7FB /* WKFortuneWatch */,
+				DCAD6B621BD56ECC00D5A7FB /* WKFortuneWatch Extension */,
 				DCAD6B2E1BD56EB100D5A7FB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +137,8 @@
 			children = (
 				DCAD6B2D1BD56EB100D5A7FB /* WKFortune.app */,
 				DCAD6B411BD56EB100D5A7FB /* WKFortuneTests.xctest */,
+				DCAD6B521BD56ECC00D5A7FB /* WKFortuneWatch.app */,
+				DCAD6B5E1BD56ECC00D5A7FB /* WKFortuneWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,6 +165,37 @@
 			path = WKFortuneTests;
 			sourceTree = "<group>";
 		};
+		DCAD6B531BD56ECC00D5A7FB /* WKFortuneWatch */ = {
+			isa = PBXGroup;
+			children = (
+				DCAD6B541BD56ECC00D5A7FB /* Interface.storyboard */,
+				DCAD6B571BD56ECC00D5A7FB /* Assets.xcassets */,
+				DCAD6B591BD56ECC00D5A7FB /* Info.plist */,
+			);
+			path = WKFortuneWatch;
+			sourceTree = "<group>";
+		};
+		DCAD6B621BD56ECC00D5A7FB /* WKFortuneWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DCAD6B651BD56ECC00D5A7FB /* InterfaceController.swift */,
+				DCAD6B671BD56ECC00D5A7FB /* ExtensionDelegate.swift */,
+				DCAD6B691BD56ECC00D5A7FB /* NotificationController.swift */,
+				DCAD6B6B1BD56ECC00D5A7FB /* Assets.xcassets */,
+				DCAD6B6D1BD56ECC00D5A7FB /* Info.plist */,
+				DCAD6B631BD56ECC00D5A7FB /* Supporting Files */,
+			);
+			path = "WKFortuneWatch Extension";
+			sourceTree = "<group>";
+		};
+		DCAD6B631BD56ECC00D5A7FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCAD6B641BD56ECC00D5A7FB /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,10 +206,12 @@
 				DCAD6B291BD56EB100D5A7FB /* Sources */,
 				DCAD6B2A1BD56EB100D5A7FB /* Frameworks */,
 				DCAD6B2B1BD56EB100D5A7FB /* Resources */,
+				DCAD6B781BD56ECC00D5A7FB /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DCAD6B6F1BD56ECC00D5A7FB /* PBXTargetDependency */,
 			);
 			name = WKFortune;
 			productName = WKFortune;
@@ -134,6 +236,40 @@
 			productReference = DCAD6B411BD56EB100D5A7FB /* WKFortuneTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		DCAD6B511BD56ECC00D5A7FB /* WKFortuneWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCAD6B751BD56ECC00D5A7FB /* Build configuration list for PBXNativeTarget "WKFortuneWatch" */;
+			buildPhases = (
+				DCAD6B501BD56ECC00D5A7FB /* Resources */,
+				DCAD6B741BD56ECC00D5A7FB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCAD6B611BD56ECC00D5A7FB /* PBXTargetDependency */,
+			);
+			name = WKFortuneWatch;
+			productName = WKFortuneWatch;
+			productReference = DCAD6B521BD56ECC00D5A7FB /* WKFortuneWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		DCAD6B5D1BD56ECC00D5A7FB /* WKFortuneWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCAD6B711BD56ECC00D5A7FB /* Build configuration list for PBXNativeTarget "WKFortuneWatch Extension" */;
+			buildPhases = (
+				DCAD6B5A1BD56ECC00D5A7FB /* Sources */,
+				DCAD6B5B1BD56ECC00D5A7FB /* Frameworks */,
+				DCAD6B5C1BD56ECC00D5A7FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WKFortuneWatch Extension";
+			productName = "WKFortuneWatch Extension";
+			productReference = DCAD6B5E1BD56ECC00D5A7FB /* WKFortuneWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -145,10 +281,19 @@
 				TargetAttributes = {
 					DCAD6B2C1BD56EB100D5A7FB = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = W2L76H8G3Y;
 					};
 					DCAD6B401BD56EB100D5A7FB = {
 						CreatedOnToolsVersion = 7.0.1;
 						TestTargetID = DCAD6B2C1BD56EB100D5A7FB;
+					};
+					DCAD6B511BD56ECC00D5A7FB = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = W2L76H8G3Y;
+					};
+					DCAD6B5D1BD56ECC00D5A7FB = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = W2L76H8G3Y;
 					};
 				};
 			};
@@ -167,6 +312,8 @@
 			targets = (
 				DCAD6B2C1BD56EB100D5A7FB /* WKFortune */,
 				DCAD6B401BD56EB100D5A7FB /* WKFortuneTests */,
+				DCAD6B511BD56ECC00D5A7FB /* WKFortuneWatch */,
+				DCAD6B5D1BD56ECC00D5A7FB /* WKFortuneWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -186,6 +333,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCAD6B501BD56ECC00D5A7FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAD6B581BD56ECC00D5A7FB /* Assets.xcassets in Resources */,
+				DCAD6B561BD56ECC00D5A7FB /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCAD6B5C1BD56ECC00D5A7FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAD6B6C1BD56ECC00D5A7FB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +373,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DCAD6B5A1BD56ECC00D5A7FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAD6B6A1BD56ECC00D5A7FB /* NotificationController.swift in Sources */,
+				DCAD6B681BD56ECC00D5A7FB /* ExtensionDelegate.swift in Sources */,
+				DCAD6B661BD56ECC00D5A7FB /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -216,6 +390,16 @@
 			isa = PBXTargetDependency;
 			target = DCAD6B2C1BD56EB100D5A7FB /* WKFortune */;
 			targetProxy = DCAD6B421BD56EB100D5A7FB /* PBXContainerItemProxy */;
+		};
+		DCAD6B611BD56ECC00D5A7FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCAD6B5D1BD56ECC00D5A7FB /* WKFortuneWatch Extension */;
+			targetProxy = DCAD6B601BD56ECC00D5A7FB /* PBXContainerItemProxy */;
+		};
+		DCAD6B6F1BD56ECC00D5A7FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCAD6B511BD56ECC00D5A7FB /* WKFortuneWatch */;
+			targetProxy = DCAD6B6E1BD56ECC00D5A7FB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -234,6 +418,14 @@
 				DCAD6B3A1BD56EB100D5A7FB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DCAD6B541BD56ECC00D5A7FB /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCAD6B551BD56ECC00D5A7FB /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -324,6 +516,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WKFortune/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKFortune;
@@ -335,6 +528,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WKFortune/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKFortune;
@@ -366,6 +560,70 @@
 			};
 			name = Release;
 		};
+		DCAD6B721BD56ECC00D5A7FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "WKFortuneWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKFortune.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		DCAD6B731BD56ECC00D5A7FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "WKFortuneWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKFortune.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		DCAD6B761BD56ECC00D5A7FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WKFortuneWatch_Extension;
+				INFOPLIST_FILE = WKFortuneWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKFortune.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		DCAD6B771BD56ECC00D5A7FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WKFortuneWatch_Extension;
+				INFOPLIST_FILE = WKFortuneWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKFortune.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -391,6 +649,22 @@
 			buildConfigurations = (
 				DCAD6B4E1BD56EB100D5A7FB /* Debug */,
 				DCAD6B4F1BD56EB100D5A7FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DCAD6B711BD56ECC00D5A7FB /* Build configuration list for PBXNativeTarget "WKFortuneWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCAD6B721BD56ECC00D5A7FB /* Debug */,
+				DCAD6B731BD56ECC00D5A7FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DCAD6B751BD56ECC00D5A7FB /* Build configuration list for PBXNativeTarget "WKFortuneWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCAD6B761BD56ECC00D5A7FB /* Debug */,
+				DCAD6B771BD56ECC00D5A7FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

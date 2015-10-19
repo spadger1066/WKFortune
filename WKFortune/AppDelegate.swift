@@ -7,16 +7,50 @@
 //
 
 import UIKit
+import WatchConnectivity
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
 
     var window: UIWindow?
-
+    var vc:ViewController?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        if (WCSession.isSupported()){
+            let session = WCSession.defaultSession()
+            session.delegate = self
+            session.activateSession()
+            
+            if session.paired != true {
+                print("Apple watch is not paired")
+            }
+            
+            if session.watchAppInstalled != true {
+                print("WatchConnectivity is not supported on this device")
+            }
+        }
+        vc = application.windows[0].rootViewController as? ViewController
         return true
+    }
+    
+    func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
+        var function: Int! = 0
+        if let input = message as? [String : Int] {
+            function = input["function"] as Int!
+        }
+        
+        switch(function) {
+        case 1:
+            let result = vc?.generateFortune()
+            var fortuneDict = Dictionary<String, String>()
+            fortuneDict["fortune"] = result
+            replyHandler(fortuneDict)
+            break;
+        default:
+            print("Error: Unknown WatchKit App function")
+        }
+        
     }
 
     func applicationWillResignActive(application: UIApplication) {
